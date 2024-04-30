@@ -3,7 +3,7 @@ import './preview';
 
 Shopware.Service('cmsService').registerCmsBlock({
     name: 'googleMaps',
-    category: 'text-image',
+    category: 'maps',
     label: 'Google Maps',
     component: 'sw-cms-block-googleMaps',
     previewComponent: 'sw-cms-preview-googleMaps',
