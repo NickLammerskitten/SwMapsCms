@@ -1,0 +1,27 @@
+{
+    "name": "sw-maps-cms/sw-maps-cms",
+    "description": "sw-maps-cms/sw-maps-cms",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "~6.6.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "SwMapsCms\\SwMapsCms",
+        "label": {
+            "de-DE": "Google Maps Block",
+            "en-GB": "Google Maps block"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "SwMapsCms\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SwMapsCms\\Tests\\": "tests/"
+        }
+    }
+}
