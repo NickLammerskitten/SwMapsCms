@@ -4,12 +4,13 @@
         xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
 
     <card>
-        <title>Minimal configuration</title>
+        <title>Google Maps CMS Configuration</title>
+        <title lang="de-DE">Google Maps CMS Konfiguration</title>
 
         <input-field type="text">
-            <name>textField</name>
-            <label>Test field with default value</label>
-            <defaultValue>test</defaultValue>
+            <name>googleMapsApiKey</name>
+            <required>true</required>
+            <label>Google Maps API Key</label>
         </input-field>
     </card>
 
