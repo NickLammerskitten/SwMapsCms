@@ -1,9 +1,9 @@
 {% block sw_cms_block_googleMaps %}
     <div>
         <h2>Junges Gemuese</h2>
-        <img
-            alt="Bild"
+        <img alt="Bild"
             border="0"
-            src="https://maps.googleapis.com/maps/api/staticmap?size=450x450&zoom=14&center=51.920960,7.603800&key=API_KEY">
+            :src="getImageUrl()"
+        >
     </div>
 {% endblock %}
