@@ -16,7 +16,12 @@ Shopware.Component.register('sw-cms-block-googleMaps', {
     data() {
         return {
             googleMapsApiKey: null,
+            imageUrl: ''
         };
+    },
+
+    created() {
+        this.getImageUrl().then(imageUrl => this.imageUrl = imageUrl);
     },
 
     methods: {
@@ -28,20 +33,18 @@ Shopware.Component.register('sw-cms-block-googleMaps', {
         async getImageUrl() {
             return await this.fetchApiKey().then(apiKey => {
                 this.googleMapsApiKey = apiKey;
-                //console.log("ApiKey: " + apiKey);
 
                 const baseUrl = 'https://maps.googleapis.com/maps/api/staticmap';
                 const params = {
                     center: '51.920960,7.603800',
                     zoom: 14,
                     size: '450x450',
-                    markers: 'color:green%7Clabel:Junges Gemuese%7C51.920960,7.603800',
+                    markers: 'color:green%7Clabel:Jungesgemuese%7C51.920960,7.603800',
                     key: this.googleMapsApiKey,
                 };
 
                 const urlSearchParams = new URLSearchParams(params);
                 return `${baseUrl}?${urlSearchParams.toString()}`;
-                //console.log(url);
             });
         },
     }
