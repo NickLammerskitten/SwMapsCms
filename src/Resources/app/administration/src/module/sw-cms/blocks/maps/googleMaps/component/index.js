@@ -39,7 +39,7 @@ Shopware.Component.register('sw-cms-block-googleMaps', {
                     center: '51.920960,7.603800',
                     zoom: 14,
                     size: '450x450',
-                    markers: 'color:green%7Clabel:Jungesgemuese%7C51.920960,7.603800',
+                    markers: 'color:green|label:JG|51.920960,7.603800',
                     key: this.googleMapsApiKey,
                 };
 
