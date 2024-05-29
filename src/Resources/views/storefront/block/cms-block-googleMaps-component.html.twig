@@ -1,1 +1,16 @@
-{% sw_extends '@Storefront/storefront/block/cms-block-googleMaps.html.twig' %}
+{% block block_googleMaps %}
+    {% set element = block.slots.getSlot('content') %}
+
+    <div class="col-12" data-cms-element-id="{{ element.id }}">
+        {% block block_googleMaps_inner %}
+            {% sw_include "@Storefront/storefront/block/cms-block-googleMaps.html.twig" ignore missing %}
+        {% endblock %}
+    </div>
+{% endblock %}
+
+
+https://maps.googleapis.com/maps/api/staticmap?
+center=40.712776%2C74.005974&
+zoom=14&
+size=450x450&
+markers=color%3Ablue%7Clabel%3AJ%7C40.712776%2C74.005974&key=AIzaSyDWv-vMZ_8epbWsGqwp_DU-osGzaUeGZT0

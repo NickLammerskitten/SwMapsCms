@@ -1,0 +1,17 @@
+{% block sw_cms_element_googleMapsElement_config %}
+    <div>
+        <sw-text-field
+              v-model="longitude"
+              class="swag-googleMapsElement-field"
+              label="Longitude"
+              @update:value="onLongitudeUpdate">
+        </sw-text-field>
+
+        <sw-text-field
+                  v-model="latitude"
+                  class="swag-googleMapsElement-field"
+                  label="Latitude"
+                  @update:value="onLatitudeUpdate">
+        </sw-text-field>
+    </div>
+{% endblock %}

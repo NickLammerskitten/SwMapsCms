@@ -1,0 +1,11 @@
+{% block sw_cms_element_googleMapsElement_preview %}
+    <div>
+            {% if imageUrl != '' %}
+                <img alt="Map"
+                    border="0"
+                    :src="imageUrl">
+            {% else %}
+                <h2>No URL given</h2>
+            {% endif %}
+        </div>
+{% endblock %}

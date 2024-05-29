@@ -1,13 +1,5 @@
 {% block sw_cms_block_googleMaps %}
     <div>
-        <h2>Junges Gemuese</h2>
-
-        {% if imageUrl != '' %}
-            <img alt="Map"
-                border="0"
-                :src="imageUrl">
-        {% else %}
-            <h2>No URL given</h2>
-        {% endif %}
+        <googleMapsElement />
     </div>
 {% endblock %}
